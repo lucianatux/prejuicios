@@ -3,34 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Prejuicios</title>
   </head>
   <body>
     <div class="container">
-      <img src="" alt="" /><!--imagen fija-->
-      <img src="" alt="" /><!--gif-->
-      <div class="options-div">
-        <button>
-            <select name="" id="">
-                <option value="">"Alguien a quien admiras"</option>
-                <option value="">"Alguien a quien desprecias"</option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-        </button>
+      <div id="tutorial-div">
+        <p id="tutorial-step-1" class="fade">Esta experiencia interactiva te mostrará cómo nuestros prejuicios pueden cambiar nuestra interpretación de las acciones de los demás.</p>
+        <p id="tutorial-step-2" class="fade" style="display:none;">Selecciona las distintas creencias, prejuicios y observa como cambian tus diálogos mentales y tu percepción de la realidad</p>
+        <p id="tutorial-step-3" class="fade" style="display:none;">¿Notaste cómo tu percepción de la historia cambió según tus prejuicios? Esta experiencia nos recuerda que debemos ser conscientes de cómo nuestras opiniones sobre las personas pueden distorsionar nuestra interpretación de sus acciones.</p>
       </div>
-      <div class="thoughts-div">
-        <p> "El personaje admirado estaba ayudando a la otra persona a levantarse, mostrando su compasión y bondad."</p>
-        <p> "El personaje despreciado estaba actuando con condescendencia, ayudando solo para sentirse superior."</p>
-        <p></p>
-        <p></p>
+      <div id="content-div" class="fade" style="display:none;">
+        <div class="img-div">
+          <img src="listen1.jpg" alt="" />
+          <img src="" alt="" /><!--gif-->
+        </div>
+        <div class="options-div">
+          <h4>Creencias, prejuicios</h4>
+          <select id="prejudices-select"> 
+            <option value="thought-1">La persona que está arriba es alguien a quien admiras</option>
+            <option value="thought-2">La persona que está arriba es alguien a quien desprecias</option>
+            <option value="thought-3">La persona que está abajo es alguien a quien admiras</option>
+            <option value="thought-4">La persona que está abajo es alguien a quien desprecias</option>
+          </select>
+        </div>
+        <div id="thoughts-div">
+          <p id="thought-1" class="fade" style="display:none;">Seguramente él está ayudando a la otra persona a levantarse, mostrando su compasión y bondad.</p>
+          <p id="thought-2" class="fade" style="display:none;">Seguramente él está obligando a la otra persona a rendirle pleitesía y obediencia, es tan soberbio!</p>
+          <p id="thought-3" class="fade" style="display:none;">Seguramente él está cansado de tanto trabajar y siempre hay alguien dispuesto a ayudarle, porque es una gran persona</p>
+          <p id="thought-4" class="fade" style="display:none;">Seguramente él está chupandole las medias a su superior para conseguir algo ilegal</p>
+        </div>
       </div>
-      <div class="tutorial-div">
-        <p>"Esta experiencia interactiva te mostrará cómo nuestros prejuicios pueden cambiar nuestra interpretación de las acciones de los demás."</p>
-        <p>"¿Notaste cómo tu percepción de la historia cambió según tus prejuicios? Esta experiencia nos recuerda que debemos ser conscientes de cómo nuestras opiniones sobre las personas pueden distorsionar nuestra interpretación de sus acciones."</p>
-        <p></p>
-        <p></p>
-      </div>
+      <button id="end-button" class="fade" style="display:none;">Finalizar experiencia</button>
     </div>
+    
+    
+    <script src="script.js"></script>    
   </body>
 </html>
