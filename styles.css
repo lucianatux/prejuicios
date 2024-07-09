@@ -1,53 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 75px;
-  }
-  
-  body {
-    overflow-x: hidden;
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-  }
-  .container{
-    background: #ddd;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .fade {
-    opacity: 0;
-    transition: opacity 1s;
-  }
-  
-  .show {
-    opacity: 1;
-    display: block;
-  }
-  
-  .img-div{
-    height: 300px !important;
-    padding: 20px !important;
-  }
-  .img-div img{
-    height: 260px !important;
-  }
-  .options-div{
-    margin: 10px !important;
-  }
-  .options-div select{
-padding: 10px;
-border-radius: 5px !important;
-font-size: 16px !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
 
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.fade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.unfade {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.hidden {
+  display: none;
+}
+.img-div {
+  height: 350px !important;
+  padding: 20px !important;
+}
+.img-div img {
+  height: 310px !important;
+}
+.options-div {
+  margin: 10px !important;
+}
+.options-div select {
+  padding: 10px;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+}
+.options-div h4 {
+  padding: 5px !important;
+}
+#tutorial-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px !important;
+  font-size: 20px !important;
+  padding: 10px !important;
+}
+@media(max-width:568px){
+  .img-div {
+    height: 300px !important;
+    padding: 10px !important;
   }
-  .options-div h4{
-    padding: 5px !important;
+  .img-div img {
+    height: 280px !important;
   }
- 
- 
+  #tutorial-div{
+    height: 230px !important;
+    font-size: 16px !important;
+    padding: 15px !important;
+  }
+}
+
