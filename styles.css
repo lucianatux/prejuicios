@@ -106,7 +106,7 @@ body {
   #thoughts-div{
     position: absolute;
     top: 18%;
-    left: 30%;
+    left: 20%;
     height: 300px !important;
     width: 300px !important;
     background-image: url("pensar2.png");
@@ -127,6 +127,9 @@ body {
     height: 200px !important;
     background: #fff;
     display: block;
+  }
+  .options-div select{
+    font-size: 12px !important;
   }
 }
 
