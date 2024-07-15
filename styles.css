@@ -13,6 +13,8 @@ body {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  background: #01010188;
+  color: #fff;
 }
 .container {
   padding: 10px;
@@ -68,6 +70,7 @@ body {
   background-image: url("pensar2.png");
   background-position: center;
   background-size: cover;
+  color: #111;
 }
 #thoughts-div p{
   position: relative;
