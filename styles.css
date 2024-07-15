@@ -13,7 +13,6 @@ body {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  background: #01010188;
   color: #fff;
 }
 .container {
@@ -36,11 +35,29 @@ body {
   display: none;
 }
 .img-div {
-  height: 350px !important;
-  padding: 20px !important;
+  height: 350px;
+  width: 350px;
+  margin: auto;
+  display: flex;
 }
-.img-div img {
-  height: 310px !important;
+.img-one{
+  background-image: url('listen3.jpg');
+  background-size: cover;
+height: 350px !important;
+width: 175px !important;
+}
+.img-one:hover{
+  background-image: url('listen2.jpg');
+  background-size: cover;
+height: 350px !important;
+width: 175px !important;
+}
+.img-two{
+  background-image: url('listen3.jpg');
+  background-size: cover;
+  background-position: right;
+height: 350px !important;
+width: 175px !important;
 }
 .options-div {
   margin: 10px !important;
@@ -52,6 +69,7 @@ body {
 }
 .options-div h4 {
   padding: 5px !important;
+  text-shadow: 0px 0px 5px #000;
 }
 #tutorial-div{
   display: flex;
@@ -60,6 +78,7 @@ body {
   height: 200px !important;
   font-size: 20px !important;
   padding: 10px !important;
+  text-shadow: 0px 0px 5px #000;
 }
 #thoughts-div{
   position: absolute;
@@ -95,11 +114,16 @@ body {
 }
 @media(max-width:568px){
   .img-div {
-    height: 280px !important;
-    padding: 10px !important;
+    height: 300px !important;
   }
-  .img-div img {
-    height: 260px !important;
+  .img-one{
+  height: 300px !important;
+  width: 150px !important;
+  }
+  .img-two{
+  height: 300px !important;
+  width: 150px !important;
+  
   }
   #tutorial-div{
     height: 180px !important;
@@ -128,7 +152,6 @@ body {
   }
   .space{
     height: 200px !important;
-    background: #fff;
     display: block;
   }
   .options-div select{

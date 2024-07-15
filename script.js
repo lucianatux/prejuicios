@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const endButton = document.getElementById("end-button");
 
   const steps = [
-    "Esta experiencia interactiva te mostrará cómo nuestros prejuicios pueden cambiar nuestra interpretación de las acciones de los demás.",
+    "Esta experiencia interactiva te mostrará cómo nuestros prejuicios e ideas pueden cambiar nuestra interpretación de las acciones de los demás.",
     "Selecciona las distintas creencias, prejuicios.<br><br>Observa como cambian tus diálogos mentales y tu percepción de la realidad",
-    "¿Notaste cómo tu percepción de la historia cambió según tus prejuicios?<br><br>Esta experiencia nos recuerda que debemos ser conscientes de cómo nuestras opiniones sobre las personas pueden distorsionar nuestra interpretación de sus acciones."
+    "¿Notaste cómo tu percepción de la historia cambió según tu subjetividad?<br><br>Esta experiencia nos recuerda que debemos ser conscientes de cómo nuestras opiniones, creencias, temores, gustos, etc. pueden distorsionar nuestra interpretación del mundo que nos rodea."
   ];
 
   let currentThought = null; // Variable para almacenar el pensamiento actual
