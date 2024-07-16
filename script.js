@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const tutorialStep = document.getElementById("tutorial-step");
   const contentDiv = document.getElementById("content-div");
   const prejudicesSelect = document.getElementById("prejudices-select");
+  const imgOne = document.getElementById('img-one');
+  const imgTwo = document.getElementById('img-two');
+  const nextButton = document.getElementById("next-button");
   const endButton = document.getElementById("end-button");
 
   const steps = [
@@ -52,28 +55,54 @@ document.addEventListener("DOMContentLoaded", function () {
     showElement(tutorialStep);
   });
   
-
-
   prejudicesSelect.addEventListener("change", function () {
     const selectedValue = prejudicesSelect.value;
     const selectedThought = document.getElementById(selectedValue);
 
-    // Hide the current thought if there is one
+    // Cambiar la imagen de fondo según la opción seleccionada
+    let backgroundImage = '';
+
+    switch(selectedValue) {
+        case 'thought-1':
+            backgroundImage = 'url("listencyan.jpeg")';
+            imgTwo.style.backgroundImage = backgroundImage;
+            imgOne.style.backgroundImage = 'url("listen3.jpg")';
+            break;
+        case 'thought-2':
+            backgroundImage = 'url("listenred.jpeg")';
+            imgTwo.style.backgroundImage = backgroundImage;
+            imgOne.style.backgroundImage = 'url("listen3.jpg")';
+            break;
+        case 'thought-3':
+            backgroundImage = 'url("listencyan.jpeg")';
+            imgOne.style.backgroundImage = backgroundImage;
+            imgTwo.style.backgroundImage = 'url("listen3.jpg")';
+            break;
+        case 'thought-4':
+            backgroundImage = 'url("listenred.jpeg")';
+            imgOne.style.backgroundImage = backgroundImage;
+            imgTwo.style.backgroundImage = 'url("listen3.jpg")';
+            break;
+        default:
+            backgroundImage = '';
+    }
+
+    // Ocultar el pensamiento actual si hay uno
     if (currentThought) {
-      hideElement(currentThought);
+        hideElement(currentThought);
     }
 
-    // Show the new thought
+    // Mostrar el nuevo pensamiento
     if (selectedThought) {
-      setTimeout(() => {
-        showElement(selectedThought);
-        currentThought = selectedThought; // Update the current thought
-      }, 1000); // Coincide con la duración de la transición CSS
+        setTimeout(() => {
+            showElement(selectedThought);
+            currentThought = selectedThought; // Actualizar el pensamiento actual
+        }, 1000); // Coincide con la duración de la transición CSS
     }
-  });
-
+});
   // Show the end button after selecting a thought
   prejudicesSelect.addEventListener("change", function () {
+    showElement(nextButton);
     showElement(endButton);
   });
 });
