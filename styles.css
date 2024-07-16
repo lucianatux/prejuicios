@@ -114,7 +114,7 @@ width: 160px !important;
   text-shadow: 0px 0px 10px #000;
   box-shadow: 2px 2px 6px #111;
 }
-@media(max-width:568px){
+@media(max-width:768px){
   .img-div {
     height: 300px !important;
   }
