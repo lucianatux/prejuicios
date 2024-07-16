@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   endButton.addEventListener("click", function () {
     updateTutorialStep(2);
     hideElement(contentDiv);
+    hideElement(nextButton);
     hideElement(endButton);
     showElement(tutorialStep);
   });
